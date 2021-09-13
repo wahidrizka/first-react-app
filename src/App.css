@@ -47,13 +47,12 @@
     font-family: Gilroy Bold, serif;
     white-space: nowrap;
     padding: 5px 16px;
-    vertical-align: middle;
+    margin: 10px 0;
     font-size: 16px;
     font-weight: bold;
     border: 1px solid;
     border-radius: 6px;
     line-height: 20px;
-    vertical-align: middle;
     cursor: pointer;
     appearance: none;
 }
@@ -63,7 +62,6 @@
     color: #0969da;
     background-color: #f6f8fa;
     border-color: rgba(27, 31, 36, 0.15);
-    margin: 1em;
     box-shadow: rgba(27,31,36,0.15), inset 0 1px 0 rgba(255,255,255,0.25);
     transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
     transition-property: color, background-color, border-color;
@@ -71,6 +69,29 @@
 
 .btn-link:hover {
     color: #ffffff;
+    background-color: #0969da;
+    border-color: rgba(27, 31, 36, 0.15);
+    box-shadow: rgba(27,31,36,0.15), inset 0 1px 0 rgba(255,255,255,0.25);
+}
+
+.btn-icon {
+    font-size: 20px;
+    cursor: pointer;
+    appearance: none;
+    padding: 6px 8px;
+    margin: 16px 10px;
+    border: 1.5px solid;
+    border-radius: 32px;
+    color: #0969da;
+    background-color: #ddf4ff;
+    border-color: rgba(27, 31, 36, 0.15);
+    box-shadow: rgba(27,31,36,0.15), inset 0 1px 0 rgba(255,255,255,0.25);
+    transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    transition-property: color, background-color, border-color;
+}
+
+.btn-icon:hover {
+    color: #ddf4ff;
     background-color: #0969da;
     border-color: rgba(27, 31, 36, 0.15);
     box-shadow: rgba(27,31,36,0.15), inset 0 1px 0 rgba(255,255,255,0.25);
