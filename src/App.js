@@ -11,6 +11,7 @@ import {
 
 import { IoLogoLinkedin, IoLogoGithub, IoLogoInstagram } from "react-icons/io5";
 
+import Home from "./components/components.home/home.base";
 import About from "./components/components.about/about.base";
 import Experiences from "./components/components.experiences/experiences.base";
 import Education from "./components/components.edu/edu.base";
@@ -26,7 +27,7 @@ export default class App extends React.Component {
         <div className="container use-font">
           {/* Sidebar */}
           <aside className="container__sidebar sidebar__effect">
-            <NavLink exact to="/">
+            <NavLink to="/">
               <Avatar />
             </NavLink>
             <NavLink to="/about">
@@ -83,6 +84,9 @@ export default class App extends React.Component {
               </Route>
               <Route path="/awards">
                 <Awards />
+              </Route>
+              <Route path="/">
+                <Home />
               </Route>
             </Switch>
           </main>
