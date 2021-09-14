@@ -322,12 +322,18 @@
     background-color: #ddf4ff;
     border: 1px solid rgba(84, 174, 255, 0.4);
     border-radius: 6px;
+    transition: 0.3s;
+}
+
+.skills__items:hover {
+    transform: scale(1.2);
 }
 
 .skills__icon {
     font-size: 24px;
     color: #0366d6;
 }
+
 
 .skills_title {
     color: #0366d6;
@@ -350,12 +356,17 @@
 }
 
 .interests__items {
+    transition: 0.3s;
     width: 132px;
     text-align: center;
     margin: 10px;
     background-color: #ddf4ff;
     border: 1px solid rgba(84, 174, 255, 0.4);
     border-radius: 6px;
+}
+
+.interests__items:hover{
+    transform: scale(1.2);
 }
 
 .interests__icon {
@@ -368,3 +379,44 @@
     font-size: 14px;
 }
 /* Interests */
+
+/* Awards */
+
+.awards__heading {
+    text-align: center;
+    margin: 32px 0;
+}
+
+.container__awards {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 100px;
+}
+
+.awards__items {
+    padding: 10px;
+    margin: 7px;
+    align-content: center;
+    background-color: #ddf4ff;
+    border: 1px solid rgba(84, 174, 255, 0.4);
+    border-radius: 6px;
+}
+
+.awards__img img {
+    width: auto;
+    height: 190px;
+    transition: 0.3s;
+}
+
+.awards__img img:hover{
+    transform: scale(1.5);
+}
+
+.awards_title {
+    color: #0366d6;
+    font-size: 14px;
+}
+
+/* Awards */

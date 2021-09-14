@@ -2,8 +2,12 @@ import React from "react";
 import "./App.css";
 import NavigationButton from "./components/components.navigation/navigation.button";
 import Avatar from "./components/components.navigation/avatar";
-import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
-
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  NavLink,
+} from "react-router-dom";
 
 import { IoLogoLinkedin, IoLogoGithub, IoLogoInstagram } from "react-icons/io5";
 
@@ -13,6 +17,7 @@ import Education from "./components/components.edu/edu.base";
 import Skills from "./components/components.skills/skills.base";
 import Interests from "./components/components.interests/interests.base";
 import SocialIcon from "./components/components.navigation/navigation.button-social";
+import Awards from "./components/components.awards/awards.base";
 
 export default class App extends React.Component {
   render() {
@@ -43,9 +48,18 @@ export default class App extends React.Component {
               <NavigationButton btnLabel="Awards" />
             </NavLink>
             <div className="container__socialicon">
-              <SocialIcon link="https://www.linkedin.com/in/wahidrizka/" btnIcon={<IoLogoLinkedin />} />
-              <SocialIcon link="https://github.com/wrfOxobz" btnIcon={<IoLogoGithub />} />
-              <SocialIcon link="https://www.instagram.com/wahidrizka/" btnIcon={<IoLogoInstagram />} />
+              <SocialIcon
+                link="https://www.linkedin.com/in/wahidrizka/"
+                btnIcon={<IoLogoLinkedin />}
+              />
+              <SocialIcon
+                link="https://github.com/wrfOxobz"
+                btnIcon={<IoLogoGithub />}
+              />
+              <SocialIcon
+                link="https://www.instagram.com/wahidrizka/"
+                btnIcon={<IoLogoInstagram />}
+              />
             </div>
           </aside>
 
@@ -67,7 +81,9 @@ export default class App extends React.Component {
               <Route path="/interests">
                 <Interests />
               </Route>
-              <Route path="/awards"></Route>
+              <Route path="/awards">
+                <Awards />
+              </Route>
             </Switch>
           </main>
         </div>
